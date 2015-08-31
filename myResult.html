@@ -1,1 +1,62 @@
+<html>
 
+<title>myResult</title>
+
+<body>
+	<?php
+		$username = $_POST[username];
+		$password = $_GET[password];
+		$fullname = $_POST[fullname];
+		$lahir = $_GET[born];
+		$email = $_POST[email];
+		$agama = $_GET[agama];
+		$noHP = $_GET[noHP];
+		$sex = $_GET[sex];
+		$penghasilan = $_GET[penghasilan];
+		$transportasi = $_GET[transportasi];
+	?>
+	
+	<h1>Hasil Input</h1>
+	<table border=5px style:"width=50%">
+		<tr>
+			<td> Nama Lengkap </td>
+			<td> <?php echo $fullname?> </td>
+		</tr>
+		<tr>
+			<td> Username </td>
+			<td> <?php echo $username?> </td>
+		</tr>
+		<tr>
+			<td> Tanggal Lahir </td>
+			<td> <?php echo $lahir?> </td>
+		</tr>
+		<tr>
+			<td> E-Mail </td>
+			<td> <?php echo $email?> </td>
+		</tr>
+		<tr>
+			<td> Agama </td>
+			<td> <?php echo $agama?> </td>
+		</tr>
+		<tr>
+			<td> No. HP </td>
+			<td> <?php echo $noHP?> </td>
+		</tr>
+		<tr>
+			<td> Jenis Kelamin</td>
+			<td> <?php echo $sex?> </td>
+		</tr>
+		<tr>
+			<td> Penghasilan </td>
+			<td> <?php echo $penghasilan?> </td>
+		</tr>
+		<tr>
+			<td> Transportasi </td>
+			<td> <?php echo $transportasi?> </td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<a href=myForm1.html>Input Ulang...</a>
+</body>
+</html>
